@@ -23,13 +23,15 @@ fn tcp_client() -> std::io::Result<()> {
 #[cfg(test)]
 mod tests {
 
+    use super::*;
+
     #[test]
-    fn tcp_server() {
+    fn tcp_server_test() {
         tcp_server();
     }
 
     #[test]
-    fn tcp_client() {
+    fn tcp_client_test() {
         let _res = tcp_client();
     }
 }
